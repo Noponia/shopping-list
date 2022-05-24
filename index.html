@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping List</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Shopping List</h1>
+            <form id="submit-form">
+                <input class="submit-text" type="text" placeholder="Enter shopping item here">
+                <input class="submit-num price" type="number" step="0.01" placeholder="Price" min="0">
+                <button class="submit-button" type="submit">
+                    <i class="fa-solid fa-cart-plus"></i>
+                </button>
+            </form>
+        </header>
+
+        <main>
+            <section id="shop-list">
+                <!-- <div class="shop-item">
+                    <p class="item-name">Item 1</p>
+                    
+                    <div class="item-qty-input">
+                        <button class="item-add-qty"><i class="fas fa-minus"></button>
+                        <p class="item-qty-value"></p>
+                        <button class="item-minus-qty"><i class="fas fa-plus"></i></button>
+                    </div>
+
+                    <p class="item-price">Price 1></p>
+        
+                    <input class="item-checkbox" type="checkbox">
+
+                    <button class="item-remove"></button>
+                    
+                </div> -->
+            </section>
+
+            <section id="total-price">
+                <p class="total-price-text">0.00</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright © 2022 Benjamin Chang</p>
+        </footer>
+    </body>
+</html>

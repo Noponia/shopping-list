@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(62deg, #8EC5FC, #E0C3FC);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    margin: 30px auto;
+    font-size: 1.5rem;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#submit-form {
+    display: flex;
+    background: white;
+    margin-bottom: 40px;
+}
+
+.submit-text {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    flex-basis: 70%;
+}
+
+.submit-num.price {
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submit-button {
+    border: none;
+    appearance: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    transform: scale(1.2, 1.2);
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#shop-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-item {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding: 8px 8px;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    flex-basis: 60%;
+}
+
+.item-price::before {
+    content:"$";
+}
+
+.item-qty-input {
+    display: flex;
+    flex-basis: 10%;
+}
+
+.item-price {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.item-checkbox {
+    margin: auto 0px;
+    flex-basis: 5%;
+    cursor: pointer;
+}
+
+.item-checkbox:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.item-minus-qty,
+.item-add-qty,
+.item-remove {
+    appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+    cursor: pointer;
+}
+
+.fa-solid {
+    pointer-events: none;
+}
+
+.item-minus-qty:hover,
+.item-add-qty:hover,
+.item-remove:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#total-price {
+    display: flex;
+    justify-content: end;
+    padding-top: 50px;
+}
+
+.total-price-text {
+    font-size: 1.5rem;
+}
+
+.total-price-text::before {
+    content: "Total: $";
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
